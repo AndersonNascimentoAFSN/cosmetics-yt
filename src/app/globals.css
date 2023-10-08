@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .navLink {
+    @apply text-lg hover:text-accent relative hover:after:h-1 hover:after:w-full  hover:after:bg-accent hover:after:absolute hover:after:block hover:transition hover:duration-300 hover:ease-in-out after:transition after:duration-300 after:ease-in-out;
+  }
+  .icon {
+    @apply h-6 w-6;
+  }
+}
